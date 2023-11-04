@@ -1,17 +1,31 @@
+import 'package:bookly_store/constrains.dart';
+import 'package:bookly_store/features/Splash/presentation/views/splash_view.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const BooklyStore());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class BooklyStore extends StatelessWidget {
+  const BooklyStore({super.key});
 
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-
+    return ScreenUtilInit(
+      splitScreenMode: true,
+      designSize: Size(
+          MediaQuery.sizeOf(context).width, MediaQuery.sizeOf(context).height),
+      child: MaterialApp(
+        debugShowCheckedModeBanner: false,
+        theme: ThemeData(
+          fontFamily: kPrimaryFont,
+          colorScheme: const ColorScheme.dark(),
+          scaffoldBackgroundColor: kPrimaryColor,
+        ),
+        home: const SplashView(),
+      ),
     );
   }
 }
