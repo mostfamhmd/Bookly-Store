@@ -1,6 +1,6 @@
-import 'package:bookly_store/core/utils/asset_font.dart';
 import 'package:bookly_store/core/utils/asset_icone.dart';
 import 'package:bookly_store/core/utils/asset_image.dart';
+import 'package:bookly_store/core/utils/asset_style.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
@@ -23,18 +23,11 @@ class BestSellerItem extends StatelessWidget {
           children: [
             Text(
               "Harry Potter \nand the Goblet of Fire",
-              style: TextStyle(
-                fontSize: 20.sp,
-                fontFamily: AssetFonts.kSectra,
-              ),
+              style: AssetStyles.kTextStyleSectra20,
             ),
             Text(
               "J.K. Rowling",
-              style: TextStyle(
-                fontSize: 14.sp,
-                color: Colors.grey,
-                fontFamily: AssetFonts.kMontserrat,
-              ),
+              style: AssetStyles.kTextStyle14,
             ),
             SizedBox(
               height: 20.h,
@@ -43,13 +36,11 @@ class BestSellerItem extends StatelessWidget {
               children: [
                 Text(
                   "19.99",
-                  style:
-                      TextStyle(fontSize: 20.sp, fontWeight: FontWeight.w700),
+                  style: AssetStyles.kTextStyle20,
                 ),
                 Text(
                   " €",
-                  style:
-                      TextStyle(fontSize: 15.sp, fontWeight: FontWeight.w700),
+                  style: AssetStyles.kTextStyle15,
                 ),
                 SizedBox(
                   width: 45.w,
@@ -67,18 +58,14 @@ class BestSellerItem extends StatelessWidget {
                     ),
                     Text(
                       "4.8",
-                      style: TextStyle(
-                          fontSize: 16.sp, fontWeight: FontWeight.w500),
+                      style: AssetStyles.kTextStyle16,
                     ),
                     SizedBox(
                       width: 10.w,
                     ),
                     Text(
                       "(2390)",
-                      style: TextStyle(
-                        color: Colors.grey,
-                        fontSize: 14.sp,
-                      ),
+                      style: AssetStyles.kTextStyle14,
                     ),
                   ],
                 )

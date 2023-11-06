@@ -83,12 +83,11 @@ flutter:
      - family: Sectra
        fonts:
          - asset: assets/fonts/GT-Sectra-Fine-Regular.ttf
-  #       - asset: fonts/Schyler-Italic.ttf
-  #         style: italic
      - family: Montserrat
        fonts:
          - asset: assets/fonts/Montserrat-SemiBold.ttf
-  #       - asset: fonts/TrajanPro_Bold.ttf
-  #
+     - family: Gilroy
+       fonts:
+        - asset: assets/fonts/Gilroy-Regular.ttf
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages

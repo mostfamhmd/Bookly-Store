@@ -1,6 +1,5 @@
-import 'package:bookly_store/core/utils/asset_font.dart';
+import 'package:bookly_store/core/utils/asset_style.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class SlideAnimation extends StatelessWidget {
   const SlideAnimation({
@@ -19,7 +18,7 @@ class SlideAnimation extends StatelessWidget {
             position: slideAnimation,
             child: Text(
               "Read Your Book Now",
-              style: TextStyle(fontSize: 18.sp, fontFamily: AssetFonts.kSectra),
+              style: AssetStyles.kTextStyleSplash18,
               textAlign: TextAlign.center,
             ),
           );
