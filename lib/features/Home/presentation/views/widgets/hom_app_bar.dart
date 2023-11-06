@@ -15,13 +15,13 @@ class HomeAppBar extends StatelessWidget {
       children: [
         SvgPicture.asset(
           AssetIcons.kLogo,
-          height: 20.h,
-          width: 80.w,
+          height: 16.h,
+          width: 75.w,
         ),
         SvgPicture.asset(
           AssetIcons.kSearch,
-          height: 30.h,
-          width: 30.w,
+          height: 25.h,
+          width: 25.w,
           colorFilter: const ColorFilter.mode(Colors.white, BlendMode.srcIn),
         ),
       ],

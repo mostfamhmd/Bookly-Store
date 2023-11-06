@@ -8,12 +8,11 @@ class BookItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 260.h,
-      width: 190.w,
+      width: 160.w,
       decoration: const BoxDecoration(
         image: DecorationImage(
           fit: BoxFit.fill,
-          image: AssetImage(AssetsImages.kTestImage),
+          image: AssetImage(AssetImages.kTestImage),
         ),
       ),
     );

@@ -1,4 +1,5 @@
 import 'package:bookly_store/constrains.dart';
+import 'package:bookly_store/core/utils/asset_font.dart';
 import 'package:bookly_store/features/Splash/presentation/views/splash_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -16,12 +17,11 @@ class BooklyStore extends StatelessWidget {
   Widget build(BuildContext context) {
     return ScreenUtilInit(
       splitScreenMode: true,
-      designSize: Size(
-          MediaQuery.sizeOf(context).width, MediaQuery.sizeOf(context).height),
+      designSize: const Size(375, 812),
       child: GetMaterialApp(
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
-          fontFamily: kPrimaryFont,
+          fontFamily: AssetFonts.kMontserrat,
           colorScheme: const ColorScheme.dark(),
           scaffoldBackgroundColor: kPrimaryColor,
         ),
