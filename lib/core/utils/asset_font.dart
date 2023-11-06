@@ -1,4 +1,4 @@
 class AssetFonts {
-  static const kMontserrat = "assets/fonts/Montserrat-SemiBold.ttf";
-  static const kSectra = "assets/fonts/GT-Sectra-Fine-Regular.ttf";
+  static const kMontserrat = "Montserrat";
+  static const kSectra = "Sectra";
 }
