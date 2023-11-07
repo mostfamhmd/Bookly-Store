@@ -2,23 +2,23 @@ import 'package:bookly_store/features/Home/presentation/views/widgets/best_selle
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class BestSellerListView extends StatelessWidget {
-  const BestSellerListView({super.key});
+class BestSellerSliverList extends StatelessWidget {
+  const BestSellerSliverList({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return ListView.builder(
-        padding: EdgeInsets.zero,
-        scrollDirection: Axis.vertical,
-        physics: const NeverScrollableScrollPhysics(),
-        itemCount: 6,
-        itemBuilder: (context, index) {
+    return SliverList(
+      delegate: SliverChildBuilderDelegate(
+        (BuildContext context, int index) {
           return Padding(
             padding: EdgeInsets.only(
-              bottom: 10.h,
+              bottom: 20.h,
             ),
             child: const BestSellerItem(),
           );
-        });
+        },
+        childCount: 10,
+      ),
+    );
   }
 }
