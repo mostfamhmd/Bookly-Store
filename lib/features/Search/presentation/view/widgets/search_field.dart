@@ -11,6 +11,18 @@ class SearchField extends StatelessWidget {
   Widget build(BuildContext context) {
     return TextField(
       decoration: InputDecoration(
+          prefixIcon: IconButton(
+            onPressed: () {},
+            icon: SvgPicture.asset(
+              AssetIcons.kClose,
+              height: 25.h,
+              width: 25.w,
+              colorFilter: const ColorFilter.mode(
+                Colors.white,
+                BlendMode.srcIn,
+              ),
+            ),
+          ),
           hintText: "Search",
           hintStyle: AppStyles.kTextStyleAuther18.copyWith(
             color: Colors.white,
@@ -21,9 +33,13 @@ class SearchField extends StatelessWidget {
           suffixIcon: IconButton(
             onPressed: () {},
             icon: SvgPicture.asset(
+              height: 20.h,
+              width: 20.w,
               AssetIcons.kSearch,
-              colorFilter:
-                  const ColorFilter.mode(Colors.white, BlendMode.srcIn),
+              colorFilter: const ColorFilter.mode(
+                Colors.white,
+                BlendMode.srcIn,
+              ),
             ),
           )),
     );

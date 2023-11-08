@@ -22,7 +22,7 @@ abstract class AppStyles {
   );
   static final kTextStyleSplash18 = TextStyle(
     fontSize: 18.sp,
-    fontFamily: AssetFonts.kGilroy,
+    fontFamily: AssetFonts.kSectra,
     fontWeight: FontWeight.w700,
   );
   static final kTextStyleAuther18 = TextStyle(
