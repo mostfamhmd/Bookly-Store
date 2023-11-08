@@ -30,7 +30,7 @@ class HomeViewBody extends StatelessWidget {
                   ),
                   Text(
                     "Best Seller",
-                    style: AssetStyles.kTextStyle18,
+                    style: AppStyles.kTextStyle18,
                   ),
                   SizedBox(
                     height: 20.h,

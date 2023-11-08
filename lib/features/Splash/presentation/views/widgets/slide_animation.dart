@@ -18,7 +18,7 @@ class SlideAnimation extends StatelessWidget {
             position: slideAnimation,
             child: Text(
               "Read Your Book Now",
-              style: AssetStyles.kTextStyleSplash18,
+              style: AppStyles.kTextStyleSplash18,
               textAlign: TextAlign.center,
             ),
           );

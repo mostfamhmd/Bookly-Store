@@ -1,5 +1,5 @@
 import 'package:bookly_store/core/utils/asset_style.dart';
-import 'package:bookly_store/features/Home/presentation/views/widgets/rating_best_seller.dart';
+import 'package:bookly_store/features/Home/presentation/views/widgets/rating_bbok.dart';
 import 'package:flutter/material.dart';
 
 class PriceAndRating extends StatelessWidget {
@@ -14,14 +14,14 @@ class PriceAndRating extends StatelessWidget {
       children: [
         Text(
           "19.99",
-          style: AssetStyles.kTextStyle20,
+          style: AppStyles.kTextStyle20,
         ),
         Text(
           " €",
-          style: AssetStyles.kTextStyle15,
+          style: AppStyles.kTextStyle15,
         ),
         const Spacer(),
-        const RatingBestSeller()
+        const RatingBook()
       ],
     );
   }

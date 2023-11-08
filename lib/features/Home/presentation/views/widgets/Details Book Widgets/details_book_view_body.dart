@@ -30,7 +30,7 @@ class DetailsBookViewBody extends StatelessWidget {
               alignment: Alignment.topLeft,
               child: Text(
                 "You can also like",
-                style: AssetStyles.kTextStyle14.copyWith(
+                style: AppStyles.kTextStyle14.copyWith(
                   color: Colors.white,
                 ),
               ),

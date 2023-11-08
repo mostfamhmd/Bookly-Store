@@ -1,7 +1,7 @@
 import 'package:bookly_store/core/utils/asset_image.dart';
 import 'package:bookly_store/core/utils/asset_style.dart';
 import 'package:bookly_store/features/Home/presentation/views/widgets/Details%20Book%20Widgets/price_&_preview.dart';
-import 'package:bookly_store/features/Home/presentation/views/widgets/rating_best_seller.dart';
+import 'package:bookly_store/features/Home/presentation/views/widgets/rating_bbok.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -24,14 +24,16 @@ class InfoBook extends StatelessWidget {
           "The Jungle Book",
           maxLines: 2,
           overflow: TextOverflow.ellipsis,
-          style: AssetStyles.kTextStyle30,
+          style: AppStyles.kTextStyle30,
         ),
         SizedBox(
           height: 5.h,
         ),
         Text(
           "Rudyard Kipling",
-          style: AssetStyles.kTextStyleAuther18,
+          style: AppStyles.kTextStyleAuther18.copyWith(
+            fontStyle: FontStyle.italic,
+          ),
         ),
         SizedBox(
           height: 15.h,
@@ -39,7 +41,7 @@ class InfoBook extends StatelessWidget {
         const Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            RatingBestSeller(),
+            RatingBook(),
           ],
         ),
         SizedBox(

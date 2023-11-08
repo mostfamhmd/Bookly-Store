@@ -36,7 +36,7 @@ class PriceAndPreview extends StatelessWidget {
           child: Center(
             child: Text(
               "Free preview",
-              style: AssetStyles.kTextStyle16,
+              style: AppStyles.kTextStyle16,
             ),
           ),
         ),

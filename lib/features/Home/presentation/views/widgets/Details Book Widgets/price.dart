@@ -13,11 +13,11 @@ class Price extends StatelessWidget {
       children: [
         Text(
           "19.99 ",
-          style: AssetStyles.kTextStyle18.copyWith(color: Colors.black),
+          style: AppStyles.kTextStyle18.copyWith(color: Colors.black),
         ),
         Text(
           "€",
-          style: AssetStyles.kTextStyle15.copyWith(color: Colors.black),
+          style: AppStyles.kTextStyle15.copyWith(color: Colors.black),
         ),
       ],
     );

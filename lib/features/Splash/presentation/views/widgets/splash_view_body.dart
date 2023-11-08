@@ -1,7 +1,5 @@
-import 'package:bookly_store/constrains.dart';
 import 'package:bookly_store/core/utils/app_router.dart';
 import 'package:bookly_store/core/utils/asset_image.dart';
-import 'package:bookly_store/features/Home/presentation/views/home_view.dart';
 import 'package:bookly_store/features/Splash/presentation/views/widgets/slide_animation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';

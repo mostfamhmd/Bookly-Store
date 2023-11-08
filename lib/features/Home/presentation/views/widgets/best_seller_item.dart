@@ -43,12 +43,12 @@ class BestSellerItem extends StatelessWidget {
                     "Harry Potter and the Goblet of Fire",
                     maxLines: 2,
                     overflow: TextOverflow.ellipsis,
-                    style: AssetStyles.kTextStyleSectra20,
+                    style: AppStyles.kTextStyleSectra20,
                   ),
                 ),
                 Text(
                   "J.K. Rowling",
-                  style: AssetStyles.kTextStyle14,
+                  style: AppStyles.kTextStyle14,
                 ),
                 SizedBox(
                   height: 20.h,
