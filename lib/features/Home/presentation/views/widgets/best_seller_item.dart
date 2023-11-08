@@ -1,9 +1,10 @@
+import 'package:bookly_store/core/utils/app_router.dart';
 import 'package:bookly_store/core/utils/asset_image.dart';
 import 'package:bookly_store/core/utils/asset_style.dart';
-import 'package:bookly_store/features/Home/presentation/views/details_book_view.dart';
 import 'package:bookly_store/features/Home/presentation/views/widgets/price_&_rating.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:go_router/go_router.dart';
 
 class BestSellerItem extends StatelessWidget {
   const BestSellerItem({super.key});
@@ -12,12 +13,7 @@ class BestSellerItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
-        Navigator.push<void>(
-          context,
-          MaterialPageRoute<void>(
-            builder: (BuildContext context) => const DetailsBookView(),
-          ),
-        );
+        GoRouter.of(context).push(AppRouter.kDetailsBookView);
       },
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
